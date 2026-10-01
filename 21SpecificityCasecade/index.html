@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Cascade</title>
+    <style>
+        /* The Sepcificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+         /* The Sepcificity of this selector is 10 */
+        .yellow{
+            color: yellow;
+           
+        }
+         /* The Sepcificity of this selector is 10 */
+        .purple{
+            color: purple;
+        }
+         /* The Sepcificity of this selector is 10 */
+        .cred{
+            color: red ;
+        }
+         /* (Attribute selector) The Sepcificity of this selector is 10 */
+        [data-x=a]{
+            color: pink;
+            /* background-color: olive; */
+        }
+        h1.yellow{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred purple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
