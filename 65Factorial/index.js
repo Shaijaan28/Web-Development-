@@ -1,9 +1,19 @@
 // let num = prompt("Enter number");
-let num =5;
-let fact =1;
+// let num =5;
+// let fact =1;
 
-for ( let i = 1; i <= num; i++) {
-   fact= fact * i;
+// for ( let i = 1; i <= num; i++) {
+//    fact= fact * i;
     
+// }
+// console.log(fact)
+
+function facto(n){
+   let fact =1;
+   for ( let i = 1; i <= n; i++) {
+   fact= fact * i; 
 }
 console.log(fact)
+}
+facto(4)
+
